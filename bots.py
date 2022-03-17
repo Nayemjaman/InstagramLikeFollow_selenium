@@ -1,4 +1,5 @@
 import os
+from re import search
 from tkinter import W, Button
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -33,7 +34,11 @@ def login(driver,uname,passw):
     except:
         pass
 
+
+
 login(driver,uname,passw)
+name = '7seaesportsofficial'
+driver.get('https://www.instagram.com/{}/'.format(name))
 
 
 
@@ -44,8 +49,9 @@ login(driver,uname,passw)
 
 
 
-# # time.sleep(50)
-# # driver.close()
+
+time.sleep(50)
+driver.close()
 
 
 
